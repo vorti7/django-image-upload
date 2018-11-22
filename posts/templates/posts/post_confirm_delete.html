@@ -1,0 +1,7 @@
+<h1>Post Delete</h1>
+
+<form method = "post">
+    {% csrf_token %}
+    <p>{{post.pk}}, Delete?</p>
+    <input type="submit" value="Submit"/>
+</form>

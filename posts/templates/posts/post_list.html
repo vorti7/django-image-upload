@@ -1,0 +1,12 @@
+<h1>Post List</h1>
+
+<a href="{% url 'posts:create' %}">New Post</a>
+
+<u1>
+    {% for post in post_list %}
+    <li>
+        <img src="{{post.image.url}}"></img>
+        <p>{{post.content}}</p>
+    </li>
+    {% endfor %}
+</u1>
